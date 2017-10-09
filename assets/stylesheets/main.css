@@ -350,7 +350,7 @@ img.aligncenter {
     position: fixed;
     z-index: 100;
     width: 100%;
-    transition: 1.5s;
+    transition: 1.6s;
     padding: 18px;
     border-bottom: transparent !important;
 }
@@ -1945,96 +1945,85 @@ section {
 
 /*changes*/
 
-@media(max-width:640px) {
-    /*.parting {
-    padding: 0px;
-    margin: 50px 0px;
-}*/
+
+/*changes*/
+
+@media(max-width:767px) {
+    .parting {
+        padding: 0px;
+        margin: 50px 0px;
+    }
     .gallery_image img {
-        width: 70%;
-        margin: 15px 15%;
+        width: 80%;
+        margin: 2px 10%;
         max-height: 300px;
     }
     .gallery_info {
-        width: 70%;
-        margin: 0px 15%;
+        width: 90%;
+        background-color: rgba(203, 182, 151, 0.7);
+        margin: 0px 5%;
+        -webkit-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        transform: rotateY(0deg);
         max-height: 325px;
     }
     .gallery {
-        overflow: hidden;
+        margin: 10px 0px;
         position: relative;
+        overflow: hidden;
+    }
+    .gallery_image {
+        border: 1px solid #cbb667;
+        margin: 0% 5%;
     }
     .gallery:hover img {
         -webkit-transform: rotateY(0deg);
         -ms-transform: rotateY(0deg);
         -o-transform: rotateY(0deg);
         transform: rotateY(0deg);
-        /*transition: 0s;
-        box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.3);*/
+        -webkit-transition: 0s;
+        -o-transition: 0s;
+        transition: 0s;
+        -webkit-box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 5px 5px 30px 5px rgba(0, 0, 0, 0.3);
     }
     .gallery_info {
-        /*top: -100%;
-        opacity: 0;
+        top: -100%;
+        opacity: 1;
+        -webkit-transform-origin: top;
+        -moz-transform-origin: top;
+        -ms-transform-origin: top;
+        -o-transform-origin: top;
         transform-origin: top;
-        transition: 2s;
-        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);*/
-        position: absolute;
-        top: 11px;
-        left: 0;
-        width: 80%;
-        height: 90%;
-        -webkit-transform: rotateY(0deg);
-        -ms-transform: rotateY(0deg);
-        -o-transform: rotateY(0deg);
-        transform: rotateY(0deg);
-        opacity: 0;
-        border-radius: 0;
-        background: rgba(0, 0, 0, 0.75);
-        color: #fff;
-        vertical-align: middle;
-        -webkit-transition: opacity 500ms;
-        -moz-transition: opacity 500ms;
-        -o-transition: opacity 500ms;
-        transition: opacity 500ms;
-        padding: 10px;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     }
     .gallery:hover .gallery_info {
-        /*opacity: 1;
+        opacity: 1;
         top: 0px;
-        left: 0px;*/
-        /* transform: rotateY(0deg);
-        transition-delay: 0s;*/
         -webkit-transform: rotateY(0deg);
         -ms-transform: rotateY(0deg);
         -o-transform: rotateY(0deg);
         transform: rotateY(0deg);
-        position: absolute;
-        top: 11px;
-        left: 0;
-        width: 81%;
-        height: 90%;
-        opacity: 1;
-        border-radius: 0;
-        background: rgba(0, 0, 0, 0.75);
-        color: #fff;
-        vertical-align: middle;
-        -webkit-transition: opacity 500ms;
-        -moz-transition: opacity 500ms;
-        -o-transition: opacity 500ms;
-        transition: opacity 500ms;
-        padding: 10px;
+        -webkit-transition-delay: 0s;
+        -o-transition-delay: 0s;
+        transition-delay: 0s;
     }
 }
 
 @media(max-width:480px) {
     .gallery_image img {
         width: 80%;
-        margin: 15px 10%;
+        margin: 2px 10%;
         max-height: 250px;
     }
     .gallery_info {
-        width: 80%;
-        margin: 0px 10%;
+        width: 90%;
+        margin: 0px 5%;
         max-height: 275px;
     }
 }
@@ -2047,6 +2036,9 @@ section {
 .main_image .image img {
     width: 2000px;
 }
+
+
+/*change end*/
 
 
 /*change end*/
